@@ -45,3 +45,33 @@
     --z-fixed: 10;
     --z-modal: 100;
 }
+
+/* Responsive Typography */
+@media screen and (max-width: 1024px) {
+    :root {
+        --biggest-font-size: 2rem;
+        --h1-font-size: 1.5rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1.125rem;
+        --normal-font-size: .938rem;
+        --small-font-size: .913rem;
+        --smallder-font-size: 0.75rem;
+    }
+}
+
+/*================ BASE ================*/
+
+/*================ LAYOUT ================*/
+
+/*================ REUSABLE CSS CLASSES ================*/
+
+/*================ SIDEBAR ================*/
+
+/*================ MAIN ================*/
+
+/*================ HOME SECTION ================*/
+
+/*================ BUTTONS ================*/
+
+
+/*================ ABOUT SECTION ================*/
