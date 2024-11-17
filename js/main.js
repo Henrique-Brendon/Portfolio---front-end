@@ -70,5 +70,27 @@ function portfolioItemDetails(portfolioItem) {
         .innerHTML;
     document.querySelector(".portfolio__popup-body").innerHTML = portfolioItem.querySelector(".portfolio__item-details")
         .innerHTML;
-    
 }
+
+/*================== SERVICES MODAL =================== */
+const modalViews = document.querySelectorAll('.services__modal'),
+    modelBtns = document.querySelectorAll('.services__button'),
+    modelcloses = document.querySelectorAll('.services__modal-close');
+
+let modal = function(modalClick) {
+    modalViews[modalClick].classList.add('active-modal');
+}
+
+modelBtns.forEach((modelBtn, i) => {
+    modelBtn.addEventListener("click", () => {
+        modal(i);
+    })
+})
+
+modelcloses.forEach((modalClose) => {
+    modalClose.addEventListener("click", () => {
+        modalViews.forEach((modalView) => {
+            modalView.classList.remove('active-modal');
+        })
+    })
+})
